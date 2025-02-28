@@ -23,7 +23,11 @@ In this proces, I performed the following tasks:
 
 ### Training
 The processed data are trained using this LSTM model with architecture:
-
+| Layers        | Neurons |
+| ------------- | -------:|
+| LSTM      | 128 |
+| Dense     |   32 |
+| Dense     |    20 |
 
 
 
