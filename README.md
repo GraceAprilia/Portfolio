@@ -23,12 +23,14 @@ In this proces, I performed the following tasks:
 5. Convert the data into supervised data (40 input data and 20 target data)
 
 ### Training
-The processed data are trained using this LSTM model with architecture:
-| Layers        | Neurons |
-| ------------- | -------:|
+The processed data are trained using 40 epoch with ADAM optimizer and MSE loss function. The architecture model are as below:
+| Layers    | Neurons |
+| ----------| -------:|
 | LSTM      | 128 |
 | Dense     |   32 |
 | Dense     |    20 |
+
+### Prediction
 
 
 
