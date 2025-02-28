@@ -12,15 +12,18 @@ This is a project I completed for my bachelor's degree, where I built LSTM model
 #### Dataset & Tools
 All stock data in this project are gathered from [yahoo finance](https://finance.yahoo.com). The data used include a 5-year period of adjusted close stock price from 14 March 2019 to 14 March 2024. All process from data cleaning, processing, training, to visualization are done by using Python.
 
-
 ### First Approach: Predicting ULTJ stock data without transfer Learning
-In the first approach I use 
+In the first approach I use ULTJ stock data with the input data of 40 days to predict the next 20 days.
 #### Data Cleaning and Processing 
 In this proces, I performed the following tasks:
 1. Remove N/A values
 2. Formating data
 3. Split the data into training and testing sets (70% training and 30% testing)
-4. Convert the data into supervised data
+4. Convert the data into supervised data (40 input data and 20 target data)
+
+### Training
+The processed data are trained using this LSTM model with architecture:
+
 
 
 
