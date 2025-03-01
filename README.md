@@ -37,5 +37,33 @@ Images below are the result of ULTJ stock prediction with (a) first iteration, (
 
 ### Second Approach: Predicting ULTJ stock data without transfer Learning
 
-In this approach the ULTJ stock data will be predicted using transfer learning. In this approach, two model will be used where the first model was trained using 20 stock data, then the weights and biases from that model were applied to the second model, which was trained with ULTJ stock data to predict ULTJ stock data. The cleaning and processing data 
+In this approach the ULTJ stock data will be predicted using transfer learning. In this approach, the data cleaning and processing steps remain unchanged. Two models are used: the first model is trained on 20 stock data, and its weights and biases are transferred to the second model, which is then trained on ULTJ stock data to predict ULTJ stock prices.
+
+#### First Model Architechture
+This model is trained using 20 stock data with various trends.
+
+| Layers    | Neurons |
+| ----------| -------:|
+| LSTM      | 256 |
+| LSTM      | 128 |
+| Dense     |   64 |
+| Dense     |    20 |
+
+#### Second Model Architechture
+This model are used to predict ULTJ stock data using the weight and biases gained in the first model. 
+
+| Layers    | Neurons |
+| ----------| -------:|
+| Taken from the fist layer of the first model|256|
+| LSTM      | 128 |
+| Taken from the third layer of the first model|64|
+| Dense     |    32 |
+| Dense     |    20 |
+
+### Prediction
+Images below are the result of ULTJ stock prediction with transfer learning whereas (a) first iteration, (b) second iteration, (c) third iteration, and (d) fourth iteration. The prediction results from four iterations of ULTJ stock data with transfer learning produced an average MAPE value of 7.599%.
+![Screenshot 2025-03-01 180117](https://github.com/user-attachments/assets/63addc48-f6f7-4082-9f6c-657c9f96ece4)
+![Screenshot 2025-03-01 180215](https://github.com/user-attachments/assets/80c19fd4-317d-4b61-b1c5-ec1e38a2f36e)
+
+
 
