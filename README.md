@@ -31,7 +31,11 @@ The processed data are trained using 40 epoch with ADAM optimizer and MSE loss f
 | Dense     |    20 |
 
 ### Prediction
+Images below are the result of ULTJ stock prediction with (a) first iteration, (b) second iteration, (c) third iteration, and (d) fourth iteration. The prediction results from four iterations of ULTJ stock data produced an average MAPE value of 10.219%.
+![Screenshot 2025-03-01 163759](https://github.com/user-attachments/assets/1cf96197-b325-4511-8758-3d1f69167791)
+![Screenshot 2025-03-01 163937](https://github.com/user-attachments/assets/7865a0cb-1447-48d7-ab21-bfd2a768b83d)
 
+### Second Approach: Predicting ULTJ stock data without transfer Learning
 
-
+In this approach the ULTJ stock data will be predicted using transfer learning. In this approach, two model will be used where the first model was trained using 20 stock data, then the weights and biases from that model were applied to the second model, which was trained with ULTJ stock data to predict ULTJ stock data. The cleaning and processing data 
 
